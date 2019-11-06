@@ -1,0 +1,389 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+ header {
+    padding: 156px 0 100px;
+  }
+  
+  section {
+    padding: 150px 0;
+  }
+  
+  footer{
+    margin-top: 70px;
+    background: #FF7B00;
+  }
+  
+  .bg-primary {
+    background-color: #ff7b00!important;
+    padding: 50px;
+    z-index: 1;
+  }
+  
+  .bg-dark {
+    background-color: #ff7b00!important;
+  }
+  
+  .card-title {
+    text-align: center;
+  }
+  
+  .card-text {
+    text-align: center;
+  }
+  
+  #search {
+    width: 500px;
+  }
+  
+  /*------------------------------------*/
+  
+  body {
+    font-size: 14px;
+    line-height: 1.462;
+    font-family: Arial, sans-serif;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /*----------------------------------------------------------*/
+  
+  
+  .beers .beer {
+    text-align: center;
+    cursor: pointer;
+  }
+  #results, .beers{
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .beer-wrapper{
+    display: block;
+    width: 300px;
+    border: 1px solid #011E44;
+    margin: 70px 10px 0 10px ;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  .beer-wrapper::after,.beer-wrapper::before{
+  margin: 0 !important;
+  }
+  .beer-wrapper img {
+    width: 20%;
+    display: block;
+    margin: 20px auto;
+  }
+   h3{
+    text-align: center;
+    background: #011e44;
+    padding: 8px 10px;
+    color: #ffffff;
+    height: 44px;
+    font-size: 1.8em;
+    overflow: hidden;
+  }
+   h4{
+    text-align: center;
+    font-size: 1.2em;
+  
+  }
+  .fix-container{
+    min-height: 553px;
+  }
+  
+  input.edita{
+    position: absolute;
+    top: 51px;
+    right:1px;
+    
+  }
+  
+  .fa-star{
+    color: #fff;
+    font-size: 1.4em;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #011E44;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .icone-ativo{
+    color: #58e6ff !important;
+  }
+  
+  img[src$="keg.png"]{
+    margin-top: 40px;
+    width: 38%;
+  }
+  
+  img[src$="cask.png"]{
+    margin-top: 80px;
+    width: 38%;
+  }
+  img[src$="54.png"],img[src$="73.png"],img[src$="218.png"],
+  img[src$="226.png"],img[src$="229.png"],img[src$="230.png"],
+  img[src$="234.png"]     {
+    margin-top: 80px;
+    width: 38%;
+  }
+img[src$="173.png"],img[src$="154.png"] {
+  margin-top: 9%;
+    width: 19.8%;
+  }
+  
+  
+  /* #######################################################*/
+  
+  
+  
+
+  .tabs {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+    background: #000;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 18px;
+  }
+  
+  .tab_item {
+    background: white;
+    cursor: pointer;
+    color: #00afdb;
+  }
+  
+ 
+  
+  .pop-up {
+    display: none;
+    position: fixed;
+    background:#fff;
+    color: #000;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 2%;
+    width: 600px;
+    top:57%;
+    z-index: 1;
+  }
+  
+  .window-close-o {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  .bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(1, 30, 68, 0.9);
+    display: none;
+  }
+  
+  .title {
+    color: #011E44;
+    background: none;
+    text-align: left;
+    border-bottom: 2px solid #ff7b00;
+    padding: 0 0 5px 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    
+  }
+  
+  .favourites_item {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+  }
+  
+  .favourites_close {
+    float: right;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  /*----------MEU ESTILO--------------*/
+  
+  .pop-up::after, .pop-up::before{
+    display: table;
+    content: '';
+    clear: both;
+  }
+  .bg-button{
+  background:transparent;
+  color: #ff7b00;
+  border: 1px solid #ff7b00;
+  }
+  
+  .pop-up img{
+    width: 20%;
+    height: 20%;
+    float: left;
+    padding: 0;
+  }
+  .pop-up img[src$="keg.png"]{
+    margin-top: 25px;
+    width: 25%;
+  }
+  
+  .edita-form{
+    max-width: 100%;
+  }
+  .pop-up ul{
+    width: 100%;
+    list-style:none;
+    padding-left: 0 !important;
+  }
+  .pop-up li::before{
+    content: '\2713';
+    color: #FF7B00;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .edita-pop{
+    float: right;
+    width: 360px;
+  }
+  
+  .esconde{
+    display: none;
+  }
+  
+  .nav-item a{
+    font-size: 1rem;
+    color: #fff !important;
+  }
+  .ativa_estrela{
+    color: #ff7b00;
+   
+  }
+  
+  .edita-pop{
+    float: right;
+    width: 360px;
+  }
+  
+  @media screen and (max-width: 600px){
+    .pop-up {
+      width: 300px;
+      top:69%;
+      font-size: 14px;
+      overflow: auto;
+    }
+    .pop-up img{
+      float: none;
+      margin: 0 0 0 38%;
+    }
+    .edita-pop{
+      width: 280px;
+      margin: 0 auto;
+      display: block;
+    }
+    .title{
+      margin: 5px 0;
+      
+    }
+    .edita-pop ul{
+      margin: 0 auto;
+      width: 290px;
+      display: block;
+    }
+    .edita-pop li, .edita-pop p{
+      padding: 0px 15px;
+    }
+    .beer-wrapper{
+      margin: 70px auto;
+    }
+    .title{
+      text-align: center;
+      font-size: 1.6em;
+    }
+  }
+
+
+  /* modal favoritos */
+
+
+  .btn-close-modal{
+    position: relative;
+    float: right;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    background: transparent;
+    border: 1px solid #ff7b00;
+    color: #ff7b00;
+    cursor: pointer;
+    z-index: 44444 !important;
+  }
+  .modalfav{
+    width: 40%;
+    display: block;
+    position: fixed;
+    top: 0%;
+    right: 30%;
+    z-index: 1555;
+    background: #fff;
+    visibility: hidden;
+  }
+  .modalfav.ativo{
+   visibility: visible;
+  }
+  .boxmodalfav{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .boxmodalfav::after, .boxmodalfav::before{
+    display: table;
+    content: '';
+    clear: both;
+  }
+  .boxmodalfav .beer-wrapper{
+    float: left;
+    position: relative;
+    margin: 0px 5px 40px 10px;
+    width: 80px;
+    height: 120px;
+    overflow: hidden;
+  }
+  .boxmodalfav .beer-wrapper h4,  .boxmodalfav .beer-wrapper i, .boxmodalfav .beer-wrapper h3{
+   font-size: 0.6em;
+  }
+  .boxmodalfav .beer-wrapper i{
+    background: none;
+    top:20px;
+    right: 1px;
+  }
+  .boxmodalfav .beer-wrapper h3{
+    height: 20px;
+    margin: 0;
+  }
+  .boxmodalfav .beer-wrapper h4{
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .boxmodalfav .beer-wrapper img{
+    height: auto;
+    margin: 10px auto 0 auto;
+  }
